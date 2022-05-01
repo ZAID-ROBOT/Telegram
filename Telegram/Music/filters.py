@@ -1,6 +1,6 @@
 from pyrogram import filters
 from typing import List, Union
-COMMAND_PREFIXES = '! /'
+COMMAND_PREFIXES = '/'
 
 
 other_filters = filters.group & ~filters.edited & ~filters.via_bot & ~filters.forwarded
