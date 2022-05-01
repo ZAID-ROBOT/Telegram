@@ -14,6 +14,8 @@ from telethon import TelegramClient
 from telethon.sessions import StringSession
 from telethon.sessions import MemorySession
 from config import Config
+from pyrogram import Client
+from pytgcalls import PyTgCalls
 
 StartTime = time.time()
 
@@ -150,6 +152,8 @@ WORKERS = 8
 
 from Telegram.modules.sql import SESSION
 bot = Client("ZPyro", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+print("Starting Pyrogram Client")
+bot.start()
 bottie = bot.get_me()
 BOT_USERNAME = bottie.username
 
