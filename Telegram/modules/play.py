@@ -9,7 +9,7 @@ import re
 from random import choice
 import aiofiles
 import aiohttp
-from Zaid.converter import convert
+from Telegram.Music.converter import convert
 import ffmpeg
 import requests
 from Telegram.Music.fonts import CHAT_TITLE
