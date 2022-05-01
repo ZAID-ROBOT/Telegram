@@ -148,7 +148,8 @@ sw = ZZInit.init_sw()
 
 API_HASH = '4e984ea35f854762dcde906dce426c2d'
 API_ID = '6435225'
-STRING_SESSION = ZInit.STRING_SESSION
+
+
 WORKERS = 8
 
 from Telegram.modules.sql import SESSION
