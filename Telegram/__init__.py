@@ -157,12 +157,12 @@ print("Starting Pyrogram Client")
 bot.start()
 bottie = bot.get_me()
 BOT_USERNAME = bottie.username
-user = Client(
+Test = Client(
     SESSION_NAME,
     api_id=API_ID,
     api_hash=API_HASH,
 )
-call_py = PyTgCalls(user)
+call_py = PyTgCalls(Test)
 print("Starting Assistant")
 call_py.start()
 ass = user.get_me()
