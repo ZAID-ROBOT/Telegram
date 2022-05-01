@@ -13,8 +13,7 @@ from Telegram.Music.converter import convert
 import ffmpeg
 import requests
 from Telegram.Music.fonts import CHAT_TITLE
-from PIL import Image, ImageDraw, ImageFont
-from config import 
+from PIL import Image, ImageDraw, ImageFont 
 from Telegram.Music.filters import command, other_filters
 from Telegram.Music.queues import QUEUE, add_to_queue
 from Telegram import call_py, Test as user, ASSISTANT_NAME, BOT_USERNAME
