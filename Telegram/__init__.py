@@ -156,7 +156,16 @@ print("Starting Pyrogram Client")
 bot.start()
 bottie = bot.get_me()
 BOT_USERNAME = bottie.username
-
+user = Client(
+    SESSION_NAME,
+    api_id=API_ID,
+    api_hash=API_HASH,
+)
+call_py = PyTgCalls(user)
+print("Starting Assistant")
+call_py.start()
+ass = user.get_me()
+ASSISTANT_NAME = ass.username
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient(MemorySession(), APP_ID, API_HASH)
 
