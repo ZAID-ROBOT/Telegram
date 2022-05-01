@@ -149,6 +149,9 @@ STRING_SESSION = ZInit.STRING_SESSION
 WORKERS = 8
 
 from Telegram.modules.sql import SESSION
+bot = Client("ZPyro", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+bottie = bot.get_me()
+BOT_USERNAME = bottie.username
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient(MemorySession(), APP_ID, API_HASH)
