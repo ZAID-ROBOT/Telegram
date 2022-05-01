@@ -12,7 +12,7 @@ class Config(object):
     API_HASH = getenv("API_HASH", "4e984ea35f854762dcde906dce426c2d")
     TOKEN = getenv("TOKEN", "")
     OWNER_ID = getenv("OWNER_ID")
-    STRING_SESSION = getenv("STRING_SESSION", "")
+    PYRO_SESSION = getenv("PYRO_SESSION", "")
     OWNER_USERNAME = getenv("OWNER_USERNAME", "")
     DB_URI = getenv("DATABASE_URL", "")
     MESSAGE_DUMP = getenv("MESSAGE_DUMP", "-1001509525202")
