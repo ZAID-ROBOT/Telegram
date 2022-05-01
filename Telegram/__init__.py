@@ -166,7 +166,7 @@ Test = Client(
 call_py = PyTgCalls(Test)
 print("Starting Assistant")
 call_py.start()
-ass = user.get_me()
+ass = Test.get_me()
 ASSISTANT_NAME = ass.username
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient(MemorySession(), APP_ID, API_HASH)
