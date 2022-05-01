@@ -19,7 +19,7 @@ from Telegram.Music.filters import command, other_filters
 from Telegram.Music.queues import QUEUE, add_to_queue
 from Telegram import call_py, Test as user, ASSISTANT_NAME, BOT_USERNAME
 from Telegram.Music.utils import bash
-from Telegram import pgram as Client
+from Telegram import bot as Client
 from pyrogram.errors import UserAlreadyParticipant, UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pytgcalls import StreamType
