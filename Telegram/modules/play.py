@@ -35,7 +35,7 @@ IMG_5 = 'https://telegra.ph/file/3d0dcdfc812b031cd2288.jpg'
 
 ZAID_IMGS = [
     "Telegram/Music/ImageFont/LightGreen.png",
-    "Telegram/Music/ImageFont/foreground.png",
+    "Telegram/Music/ImageFont/solidbg.png",
 ]
 
 def ytsearch(query: str):
