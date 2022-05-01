@@ -1,10 +1,11 @@
 # syntax=docker/dockerfile:1
 
-FROM python:3.10-slim-buster
+FROM nikolaik/python-nodejs:python3.10-nodejs17FROM nikolaik/python-nodejs:python3.10-nodejs17
 
 WORKDIR /app
 
 RUN apt-get -y update
+RUN apt-get install ffmpeg -y
 RUN apt-get -y install git gcc python3-dev
 COPY requirements.txt requirements.txt
 
